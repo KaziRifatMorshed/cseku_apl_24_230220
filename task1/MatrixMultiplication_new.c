@@ -49,7 +49,7 @@ int main(void) {
     }
   }
 
-  MultiplyMatrix(MAX_ROW, MAX_COL, MAX_ROW, (float *)A, (float *)B, (float *)C);
+  MultiplyMatrix(MAX_ROW, MAX_COL, MAX_COL, (float *)A, (float *)B, (float *)C);
 
   printf("Result:\n");
 
