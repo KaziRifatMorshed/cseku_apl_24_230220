@@ -4,7 +4,7 @@
 
 int main(void) {
 
-  /* program for printing pyramid of number; example:
+  /* program for printing pyramid of numbers; example:
          1
         1 2
        1 2 3

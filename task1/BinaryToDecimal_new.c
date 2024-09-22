@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
-void strrev(char *first) {
+void strReverse(char *first) {
 
-  /* this function will reverse a string, takes a pointer of char as parameter*/
+  /* this function will reverse a string, takes a pointer of char as parameter;
+      returns nothing*/
 
   int len = strlen(first); /*length of the string*/
 
@@ -29,7 +30,7 @@ int main(void) {
   printf("Input Binary Number : ");
   scanf("%[^\n]s", inputted_binary);
 
-  strrev(inputted_binary);
+  strReverse(inputted_binary);
 
   for (int i = 0; inputted_binary[i] != '\0'; i++) {
 
