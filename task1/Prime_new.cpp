@@ -28,19 +28,29 @@ determine whether (n % count == 0) is true or not
 
 bool check_prime(int n, int root_n, int count) {
 
-  if (count == root_n) { /* BASE CASE
-                            this if block will active when our count variable
-                            will reach sqrt_num
-                            in last recursive call
-                            determining the number as prime */
+  if ((n <= 1)) { /*corner case*/
+    return false;
+  }
+
+  if ((n == 2) || (n == 3)) { /*corner case*/
     return true;
   }
 
-  if (n % 2 == 0) { /*if even, it is not prime, and return*/
+  if ((n % 2 == 0)) { /*even numbers are not prime*/
     return false;
   }
-  if (n % count == 0) { /*count will increase with each recursive call;
-                          if num gets divided by count, it is not prime*/
+
+  if (count > root_n) {
+    /* BASE CASE
+        this if block will active when our count variable
+        will cross sqrt_num
+        in last recursive call
+        determining the number as prime */
+    return true;
+  }
+
+  if (n % count == 0) { /*count will increase with each recursive
+            call; if num gets divided by count, it is not prime*/
     return false;
   }
 
@@ -57,5 +67,9 @@ int main(void) {
 
   int sqrt_num = (int)sqrt(num); /*square root of num*/
 
-  printf("%d\n", check_prime(num, sqrt_num, 3));
+  if (check_prime(num, sqrt_num, 3) == true) {
+    printf("prime");
+  } else {
+    printf("not prime");
+  }
 }
