@@ -14,7 +14,7 @@ int main(void) {
 
   int num = 0; /* this variable will store user input: the number of rows*/
 
-  printf(" input num of rows : ");
+  printf("input num of rows : ");
   scanf("%d", &num);
 
   for (int i = 1; i <= num; i++) {

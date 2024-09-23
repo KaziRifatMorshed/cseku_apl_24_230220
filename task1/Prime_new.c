@@ -16,7 +16,17 @@ not prime
 #include <stdbool.h>
 #include <stdio.h>
 
-int check_prime(int n, int root_n, int count) {
+/*check_prime fn returns true if the number n is prime,
+and false for vice versa;
+
+check_prime is implemented in recursive manner;
+takes integer n as the number to be tested;
+integer root_n is passed to avoid determining root in each recursive call;
+integer count which is incremented in each call, used for iteration, to
+determine whether (n % count == 0) is true or not
+*/
+
+bool check_prime(int n, int root_n, int count) {
 
   if (count == root_n) { /* BASE CASE
                             this if block will active when our count variable

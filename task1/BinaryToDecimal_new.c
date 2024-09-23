@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <string.h>
 
-void strReverse(char *first) {
+/* strReverse function will reverse a string, takes a pointer of char as
+ parameter; returns nothing*/
 
-  /* this function will reverse a string, takes a pointer of char as parameter;
-      returns nothing*/
+void strReverse(char *first) {
 
   int len = strlen(first); /*length of the string*/
 
   for (int i = 0; i < (len / 2); i++) {
 
     /*this loop will swap characters between first and last, and will continue
-     * in this manner, until mid character*/
+     * in this manner, until middle/center of the string*/
 
     char temp = first[(len - 1) - i];
     first[(len - 1) - i] = first[i];

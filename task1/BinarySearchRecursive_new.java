@@ -1,8 +1,7 @@
 class BinarySearchRecursive { 
 
-    public static int BinarySearch(int[] arr, int left_idx, int right_idx, int key) {
 
-        /* this static method takes an array of integer, left index of 
+        /* BinarySearch static method takes an array of integer, left index of 
         selected portion of the array, right index of the selected part of the array,
         and the key which we are looking for
         
@@ -10,6 +9,7 @@ class BinarySearchRecursive {
         but returns -1 if key is not found;
         implemented in recursive manner
         */
+    public static int BinarySearch(int[] arr, int left_idx, int right_idx, int key) {
 
         if (left_idx > right_idx) {         /* base case */
             return -1;
@@ -38,7 +38,7 @@ class BinarySearchRecursive {
                     11, 12, 15, 20, 50, 40, 80, 99, 101};
 
         System.out.println("number 20 is in position: " + 
-        BinarySearch(arr, 0, arr.length, 20)); 
+                                BinarySearch(arr, 0, arr.length, 20)); 
 
     }
 

@@ -1,16 +1,17 @@
 #include <stdio.h>
+
 #define print_new_line printf("\n");
 
 const int MAX_ROW = 3; /*limiting this problem applicable for 3x3 matrix*/
 const int MAX_COL = 3; /*limiting this problem applicable for 3x3 matrix*/
 
-void MultiplyMatrix(int m, int n, int k, float *A, float *B, float *C) {
+/* MultiplyMatrix fn multiplies two matrix(2D array) and store them in third
+    2D array. It takes parameter m as the row num of matrix A,
+    n as column number of matrix A or row number of matrix B,
+    k as column number of matrix C,
+    takes three floating pointer as matrices, does not return anything*/
 
-  /* this fn multiplies two matrix(2D array) and store them in third
-      2D array. It takes parameter m as the row num of matrix A,
-      n as column number of matrix A or row number of matrix B,
-      k as column number of matrix C,
-      takes three floating pointer as matrices, does not return anything*/
+void MultiplyMatrix(int m, int n, int k, float *A, float *B, float *C) {
 
   for (int row = 0; row < m; row++) {
     for (int col = 0; col < k; col++) {
@@ -31,17 +32,20 @@ int main(void) {
   /*this program multiplies two matrix and store result
     in a 2D array of float*/
 
-  float A[3][3] = {0};
-  float B[3][3] = {0};
-  float C[3][3] = {0};
+  float A[3][3] = {0}; /*user input matrix*/
+  float B[3][3] = {0}; /*user input matrix*/
+  float C[3][3] = {0}; /*matrix for holding result*/
 
+  /*get matrix A*/
   printf("input 3x3 matrix A:\n");
   for (int i = 0; i < MAX_ROW; i++) {
     for (int j = 0; j < MAX_COL; j++) {
       scanf("%f", &A[i][j]);
     }
   }
+
   print_new_line;
+  /*get matrix B*/
   printf("input 3x3 matrix B:\n");
   for (int i = 0; i < MAX_ROW; i++) {
     for (int j = 0; j < MAX_COL; j++) {
