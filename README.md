@@ -17,6 +17,6 @@ Khulna University, Khulna.
 Kazi Rifat Morshed  
 Student ID: 230220  
 Undergraduate Student of B.Sc. Engg. in CSE,  
-2st year, 1st term,  
+2nd year, 1st term,  
 Computer Science and Engineering Discipline,  
 Khulna University, Khulna-9208.
