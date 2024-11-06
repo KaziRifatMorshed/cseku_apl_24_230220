@@ -1,6 +1,6 @@
 package Meeting;
 
-public class StartMeeting implements OnlineMeetingInterface, OfflineMeetingInterface {
+public class StartMeetingClass implements OnlineMeetingInterface, OfflineMeetingInterface {
     @Override
     public void offlineMeeting() {
 //

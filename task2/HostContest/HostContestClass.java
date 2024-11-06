@@ -3,19 +3,19 @@ package HostContest;
 // DIP = Dependency Inversion Principle
 
 public class HostContestClass { // High Level Module
-    DecisionMakerClass decisionMaker;
-    AnnouncementClass announcement;
-    SubmissionClass submission;
-    JudgeClass judge;
-    ResultClass result;
-    PrizeClass prize;
+    DecisionMakerInterface decisionMaker;
+    AnnouncementInterface announcement;
+    SubmissionsInterface submission;
+    JudgeInterface judge;
+    ResultInterface result;
+    PrizeInterface prize;
 
-    public HostContestClass(DecisionMakerClass decisionMaker, AnnouncementClass announcement, SubmissionClass submission, JudgeClass judge, ResultClass result, PrizeClass prize) {
-        this.decisionMaker = decisionMaker;
-        this.announcement = announcement;
-        this.submission = submission;
-        this.judge = judge;
-        this.result = result;
-        this.prize = prize;
+    public HostContestClass(DecisionMakerInterface decisionMaker, AnnouncementInterface announcement, SubmissionsInterface submission, JudgeInterface judge, ResultInterface result, PrizeInterface prize) {
+        this.decisionMaker = new DecisionMakerClass();
+        this.announcement = new AnnouncementClass();
+        this.submission = new SubmissionClass();
+        this.judge = new JudgeClass();
+        this.result = new ResultClass();
+        this.prize = new PrizeClass();
     }
 }

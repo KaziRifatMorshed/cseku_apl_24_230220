@@ -2,11 +2,11 @@ package Committee;
 
 import java.util.ArrayList;
 
-public class KU_Student extends Person {
+public class KU_Student_C extends Person_AC {
     private String discipline;
     private int year; // 1st year or 2nd year or 3rd year or 4th year
 
-    public KU_Student(String name, String discipline, int year, ArrayList<String> interests, ArrayList<String> expertise) {
+    public KU_Student_C(String name, String discipline, int year, ArrayList<String> interests, ArrayList<String> expertise) {
         this.name = name;
         this.discipline = discipline;
         this.year = year;

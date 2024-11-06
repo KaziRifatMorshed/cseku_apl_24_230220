@@ -1,7 +1,7 @@
 package SocialEngagement;
 
 
-public class Post {
+public class SocialPlatform implements PostInterface {
 
     void setPostDescription() {
 //
@@ -15,6 +15,9 @@ public class Post {
 //        
     }
 
-
+    @Override
+    public void post() {
+//
+    }
 
 }

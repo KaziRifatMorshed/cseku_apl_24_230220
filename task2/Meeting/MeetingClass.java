@@ -4,10 +4,10 @@ package Meeting;
 
 public class MeetingClass {
     NotifyCommitteeClass notifyCommittee;
-    StartMeeting startMeeting;
+    StartMeetingClass startMeeting;
 
     public MeetingClass() {
         notifyCommittee = new NotifyCommitteeClass();
-        startMeeting = new StartMeeting();
+        startMeeting = new StartMeetingClass();
     }
 }

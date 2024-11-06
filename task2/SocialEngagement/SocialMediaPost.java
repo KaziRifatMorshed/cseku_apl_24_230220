@@ -1,7 +1,15 @@
 package SocialEngagement;
 
-public class SocialMediaPost extends Post {
+public class SocialMediaPost extends SocialPlatform {
     void postInFacebook() {
+
+    }
+
+    void postInLinkedin() {
+
+    }
+
+    void postInInstagram() {
 
     }
 
