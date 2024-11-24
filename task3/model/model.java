@@ -11,6 +11,7 @@ class socialMediaPost {
 }
 
 public class model {
+    // model contains data
     ArrayList<member> list_of_members = new ArrayList<>();
     ArrayList<socialMediaPost> list_of_posts = new ArrayList<>();
 
@@ -34,6 +35,9 @@ public class model {
 
     public void judgeSubmissions() {
         //
+        if (isEligibleForContest()){ // application of business logic
+            //
+        }
     }
 
     public void receiveSubmissions() {
