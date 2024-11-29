@@ -4,11 +4,12 @@ import view.view;
 import model.model;
 
 public class controller {
-    view viewObj = new view();
-    model modelObj = new model();
+    view viewObj;
+    model modelObj;
 
-    public controller() { // constructor
-        //
+    public controller(model _model, view _view) { // constructor
+        viewObj = _view;
+        modelObj = _model;
     }
 
     public void postInSocialMedia() {
@@ -24,7 +25,7 @@ public class controller {
         viewObj.publishResult();
     }
 
-    public void formCommittee(){
+    public void formCommittee() {
         modelObj.formCommittee();
         viewObj.committeeMembers();
     }
