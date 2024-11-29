@@ -10,7 +10,7 @@ public class HostContestClass { // High Level Module
     ResultInterface result;
     PrizeInterface prize;
 
-    public HostContestClass(DecisionMakerInterface decisionMaker, AnnouncementInterface announcement, SubmissionsInterface submission, JudgeInterface judge, ResultInterface result, PrizeInterface prize) {
+    public HostContestClass() {
         this.decisionMaker = new DecisionMakerClass();
         this.announcement = new AnnouncementClass();
         this.submission = new SubmissionClass();

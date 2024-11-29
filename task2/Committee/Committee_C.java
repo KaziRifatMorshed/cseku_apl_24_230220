@@ -5,11 +5,13 @@ import java.util.ArrayList;
 public class Committee_C {
     private ArrayList<CommitteeMember_C> members;
 
-    public void formNewCommittee(){
+    protected void formNewCommittee() {
         //
+        assignDesignations();
     }
-    private void assignDesignations(){
 
+    private void assignDesignations() {
+        //
     }
 
 
