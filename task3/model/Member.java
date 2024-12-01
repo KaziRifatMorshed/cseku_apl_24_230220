@@ -1,5 +1,5 @@
 package model;
 
-public class Members {
+public class Member {
     //
 }

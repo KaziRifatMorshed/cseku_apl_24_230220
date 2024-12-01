@@ -5,8 +5,8 @@ public class CommitteeView {
         //
     }
 
-    public void committeeMembers() {
-        System.out.println("List of all committee members: ");
+    public void committeeMember() {
+        System.out.println("List of all committee Member: ");
         //
     }
 }

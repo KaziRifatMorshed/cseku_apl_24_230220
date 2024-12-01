@@ -3,7 +3,7 @@ package Committee;
 import java.util.ArrayList;
 
 public class Committee_C {
-    private ArrayList<CommitteeMember_C> members;
+    private ArrayList<CommitteeMember_C> Member;
 
     protected void formNewCommittee() {
         //
@@ -13,6 +13,5 @@ public class Committee_C {
     private void assignDesignations() {
         //
     }
-
 
 }

@@ -1,6 +1,10 @@
 package model;
 
+import java.util.ArrayList;
+
 public class HostContestModel {
+    ArrayList<String> listOfJudge;
+
     public HostContestModel() {
         //
     }
