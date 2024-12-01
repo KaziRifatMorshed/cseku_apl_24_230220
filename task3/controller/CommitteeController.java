@@ -1,17 +1,17 @@
 package controller;
 
-import model.Committee_Model;
+import model.CommitteeModel;
 import model.Members;
-import view.Committee_View;
+import view.CommitteeView;
 
 import java.util.ArrayList;
 
-public class Committee_Controller {
-    Committee_Model model_obj;
-    Committee_View view_obj;
+public class CommitteeController {
+    CommitteeModel model_obj;
+    CommitteeView view_obj;
     ArrayList<Members> members_list;
 
-    public Committee_Controller(Committee_Model model_obj, Committee_View view_obj) {
+    public CommitteeController(CommitteeModel model_obj, CommitteeView view_obj) {
         this.model_obj = model_obj;
         this.view_obj = view_obj;
     }

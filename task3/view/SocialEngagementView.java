@@ -1,8 +1,8 @@
 package view;
 
-public class SocialEngagement_View {
+public class SocialEngagementView {
 
-    public SocialEngagement_View() { // constructor
+    public SocialEngagementView() { // constructor
         //
     }
 

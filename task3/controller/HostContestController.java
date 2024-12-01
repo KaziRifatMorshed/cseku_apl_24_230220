@@ -1,13 +1,13 @@
 package controller;
 
-import model.HostContest_Model;
-import view.HostContest_View;
+import model.HostContestModel;
+import view.HostContestView;
 
-public class HostContest_Controller {
-    HostContest_Model model_obj;
-    HostContest_View view_obj;
+public class HostContestController {
+    HostContestModel model_obj;
+    HostContestView view_obj;
 
-    public HostContest_Controller(HostContest_Model model_obj, HostContest_View view_obj) {
+    public HostContestController(HostContestModel model_obj, HostContestView view_obj) {
         this.model_obj = model_obj;
         this.view_obj = view_obj;
     }

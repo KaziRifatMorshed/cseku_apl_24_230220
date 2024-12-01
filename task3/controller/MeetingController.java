@@ -1,14 +1,14 @@
 package controller;
 
-import model.Meeting_Model;
-import view.Meeting_View;
+import model.MeetingModel;
+import view.MeetingView;
 
-public class Meeting_Controller {
+public class MeetingController {
 
-    Meeting_Model model_obj;
-    Meeting_View view_obj;
+    MeetingModel model_obj;
+    MeetingView view_obj;
 
-    public Meeting_Controller(Meeting_Model model_obj, Meeting_View view_obj) {
+    public MeetingController(MeetingModel model_obj, MeetingView view_obj) {
         this.model_obj = model_obj;
         this.view_obj = view_obj;
     }

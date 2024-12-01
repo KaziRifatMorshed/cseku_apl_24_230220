@@ -1,8 +1,8 @@
 package view;
 
-public class Meeting_View {
+public class MeetingView {
 
-    public Meeting_View() {
+    public MeetingView() {
         //
     }
 

@@ -1,7 +1,7 @@
 package view;
 
-public class Committee_View {
-    public Committee_View() {
+public class CommitteeView {
+    public CommitteeView() {
         //
     }
 

@@ -1,17 +1,17 @@
 package model;
 
-public class HostContest_Model {
-    public HostContest_Model() {
+public class HostContestModel {
+    public HostContestModel() {
         //
     }
 
     public boolean isEligibleForContest() { // business logic
         boolean isEligible = true;
-//        if (){
-//            //
-//        } else {
-//            //
-//        }
+        // if (){
+        // //
+        // } else {
+        // //
+        // }
         return isEligible;
     }
 

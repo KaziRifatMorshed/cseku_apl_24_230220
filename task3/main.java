@@ -3,37 +3,33 @@ import model.*;
 import view.*;
 
 class main {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        /* Model, View, Controller Instances*/
-        Committee_Model committee_model = new Committee_Model();
-        Committee_View committee_view = new Committee_View();
-        Committee_Controller committee_controller =
-                new Committee_Controller(committee_model, committee_view);
+                /* Model, View, Controller Instances */
+                CommitteeModel CommitteeModel = new CommitteeModel();
+                CommitteeView CommitteeView = new CommitteeView();
+                CommitteeController CommitteeController = new CommitteeController(CommitteeModel, CommitteeView);
 
-        Meeting_Model meeting_model = new Meeting_Model();
-        Meeting_View meeting_view = new Meeting_View();
-        Meeting_Controller meeting_controller =
-                new Meeting_Controller(meeting_model, meeting_view);
+                MeetingModel MeetingModel = new MeetingModel();
+                MeetingView MeetingView = new MeetingView();
+                MeetingController MeetingController = new MeetingController(MeetingModel, MeetingView);
 
-        HostContest_Model hostContest_model = new HostContest_Model();
-        HostContest_View hostContest_view = new HostContest_View();
-        HostContest_Controller hostContest_controller =
-                new HostContest_Controller(hostContest_model, hostContest_view);
+                HostContestModel HostContestModel = new HostContestModel();
+                HostContestView HostContestView = new HostContestView();
+                HostContestController HostContestController = new HostContestController(HostContestModel,
+                                HostContestView);
 
-        SocialEngagement_Model socialEngagement_model = new SocialEngagement_Model();
-        SocialEngagement_View socialEngagement_view = new SocialEngagement_View();
-        SocialEngagement_Controller socialEngagement_controller =
-                new SocialEngagement_Controller(socialEngagement_model, socialEngagement_view);
+                SocialEngagementModel SocialEngagementModel = new SocialEngagementModel();
+                SocialEngagementView SocialEngagementView = new SocialEngagementView();
+                SocialEngagementController SocialEngagementController = new SocialEngagementController(
+                                SocialEngagementModel, SocialEngagementView);
 
+                /* Services being called from respective controller */
 
-
-        /* Services being called from respective controller*/
-
-        committee_controller.formCommittee();
-        meeting_controller.meeting();
-        hostContest_controller.hostContest();
-        socialEngagement_controller.postInSocialMedia();
-    }
+                CommitteeController.formCommittee();
+                MeetingController.meeting();
+                HostContestController.hostContest();
+                SocialEngagementController.postInSocialMedia();
+        }
 
 }

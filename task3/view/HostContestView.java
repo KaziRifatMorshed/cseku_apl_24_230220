@@ -1,7 +1,7 @@
 package view;
 
-public class HostContest_View {
-    public HostContest_View() {
+public class HostContestView {
+    public HostContestView() {
         //
     }
 
