@@ -1,5 +1,7 @@
 package view;
 
+import java.util.ArrayList;
+
 public class HostContestView {
     public HostContestView() {
         //
@@ -17,5 +19,11 @@ public class HostContestView {
 
     public void publishResult() {
         System.out.println("Contest Winners : ...");
+    }
+
+    public void printContestRules(ArrayList<String> rules){
+        for (int i = 0; i < rules.size(); i++){
+            System.out.println("Rule 1 : " + rules.get(i));
+        }
     }
 }

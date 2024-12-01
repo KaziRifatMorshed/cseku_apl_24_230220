@@ -19,4 +19,8 @@ public class HostContestController {
         model_obj.judgeSubmissions();
         view_obj.publishResult();
     }
+
+    public void printContestRules() {
+        view_obj.printContestRules(model_obj.getContestRules());
+    }
 }
