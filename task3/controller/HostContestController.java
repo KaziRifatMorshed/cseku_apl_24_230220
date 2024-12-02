@@ -3,24 +3,66 @@ package controller;
 import model.HostContestModel;
 import view.HostContestView;
 
-public class HostContestController {
-    HostContestModel model_obj;
-    HostContestView view_obj;
+import java.util.ArrayList;
 
-    public HostContestController(HostContestModel model_obj, HostContestView view_obj) {
-        this.model_obj = model_obj;
-        this.view_obj = view_obj;
+public class HostContestController {
+    HostContestModel modelObj;
+    HostContestView viewObj;
+
+    public HostContestController(HostContestModel modelObj, HostContestView viewObj) {
+        this.modelObj = modelObj;
+        this.viewObj = viewObj;
     }
 
     public void hostContest() {
-        view_obj.contestAnnouncement();
-        model_obj.receiveSubmissions();
-        view_obj.viewContestSubmissions();
-        model_obj.judgeSubmissions();
-        view_obj.publishResult();
+        printContestAnnouncement();
+        receiveSubmissions();
+        viewContestSubmissions();
+        judgeSubmissions();
+    }
+
+    public void printContestAnnouncement() {
+        viewObj.contestAnnouncement();
     }
 
     public void printContestRules() {
-        view_obj.printContestRules(model_obj.getContestRules());
+        viewObj.printContestRules(modelObj.getContestRules());
     }
+
+    public void receiveSubmissions() {
+        modelObj.receiveSubmissions();
+    }
+
+    public void viewContestSubmissions() {
+        viewObj.viewContestSubmissions();
+    }
+
+    public void judgeSubmissions() {
+        modelObj.judgeSubmissions();
+    }
+
+    public void publishResult() {
+        viewObj.publishResult();
+    }
+
+    public void setContestRules(ArrayList<String> contestRules) {
+        modelObj.setContestRules(contestRules);
+    }
+
+    public void setSegments(ArrayList<String> segments) {
+        modelObj.setSegments(segments);
+    }
+
+    public void viewSegments() {
+        viewObj.viewSegments(modelObj.getSegments());
+    }
+
+    public void setListOfJudges(ArrayList<String> listOfJudges) {
+        modelObj.setListOfJudges(listOfJudges);
+    }
+
+    public void printListOfJudges() {
+        viewObj.printListOfJudges(modelObj.getListOfJudges());
+    }
+
 }

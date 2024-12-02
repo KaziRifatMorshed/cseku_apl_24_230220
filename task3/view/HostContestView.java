@@ -21,9 +21,17 @@ public class HostContestView {
         System.out.println("Contest Winners : ...");
     }
 
-    public void printContestRules(ArrayList<String> rules){
-        for (int i = 0; i < rules.size(); i++){
+    public void printContestRules(ArrayList<String> rules) {
+        for (int i = 0; i < rules.size(); i++) {
             System.out.println("Rule 1 : " + rules.get(i));
         }
+    }
+
+    public void viewSegments(ArrayList<String> segments) {
+        //
+    }
+
+    public void printListOfJudges(ArrayList<String> listOfJudges) {
+        //
     }
 }

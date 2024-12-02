@@ -11,12 +11,10 @@ public class HostContestModel {
         //
     }
 
-    public boolean isEligibleForContest() { // business logic
+    public static boolean isEligibleForContest() { // business logic
         boolean isEligible = true;
         // if (){
-        // //
-        // } else {
-        // //
+        // } else if () {
         // }
         return isEligible;
     }

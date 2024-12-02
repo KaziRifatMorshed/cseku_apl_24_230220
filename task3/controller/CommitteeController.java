@@ -7,21 +7,57 @@ import view.CommitteeView;
 import java.util.ArrayList;
 
 public class CommitteeController {
-    CommitteeModel model_obj;
-    CommitteeView view_obj;
-    ArrayList<Member> Member_list;
+    CommitteeModel modelObj;
+    CommitteeView viewObj;
 
-    public CommitteeController(CommitteeModel model_obj, CommitteeView view_obj) {
-        this.model_obj = model_obj;
-        this.view_obj = view_obj;
+    public CommitteeController(CommitteeModel modelObj, CommitteeView viewObj) {
+        this.modelObj = modelObj;
+        this.viewObj = viewObj;
     }
 
-    public void formCommittee() {
-        model_obj.formCommittee(Member_list);
-        view_obj.committeeMember();
+    public void formCommittee(ArrayList<Member> newMemberList) {
+        modelObj.formCommittee(newMemberList);
+        viewObj.committeeMember(modelObj.getMembers());
     }
 
     public void newMemberList(ArrayList<Member> new_committee_Member) {
-        Member_list = new_committee_Member;
+        modelObj.setMembers(new_committee_Member);
     }
+
+    public void viewCommitteeMembersList() {
+        viewObj.committeeMember(modelObj.getMembers());
+    }
+
+    public void setCommitteeConstitution(String committeeConstitution) {
+        modelObj.setCommitteeConstitution(committeeConstitution);
+    }
+
+    public String getCommitteeConstitution() {
+        return modelObj.getCommitteeConstitution();
+    }
+
+    public void addMember(Member member) {
+        modelObj.addMember(member);
+    }
+
+    public void suspendMember(Member member) {
+        modelObj.suspendMember(member);
+    }
+
+    public void removeMember(Member member) {
+        modelObj.removeMember(member);
+    }
+
+    public int numMembers() {
+        return modelObj.getNumMember();
+    }
+
+    public void setPolicy(String policy) {
+        modelObj.setPolicy(policy);
+    }
+
+    public void printPolicy() {
+        viewObj.printPolicy(modelObj.getPolicy());
+    }
+
 }
